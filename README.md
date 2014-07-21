@@ -2,6 +2,7 @@ hindex: lightweight indexing for log-structured key-value stores
 ======
 
 Introduction
+
 This project is to add a secondary-index layer on top of HBase. In current implementation, we consider mutable data where data updates overwrite previous data versions of the same key. Index is declared at the column level. While it is possible to support various kinds of value-based queries, current implementation handles exact-match and range query (on secondary indexed column).
 
 Index maintenance and use for query processing (in other words, index write and read paths) are both implemented on the server side, using HBase CoProcessor framework (https://hbase.apache.org/apidocs/org/apache/hadoop/hbase/coprocessor/package-summary.html). For more details, check out the src directory (https://github.com/tristartom/hindex/blob/master/src). 
