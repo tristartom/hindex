@@ -11,7 +11,7 @@ Quick start
 ------
 1. Download the proj, following the link provided by github.
 2. Set up an HBase cluster instance, locally, with the gateway port 2181 (which is the zookeeper clientPort)
-3. Set up <ant> and <java-1.6+> locally (http://ant.apache.org/manual/index.html)
+3. Set up `<ant>` and `<java-1.6+>` locally (http://ant.apache.org/manual/index.html)
 4. Run
 ```
  cd $project_directory
