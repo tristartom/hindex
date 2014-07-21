@@ -12,9 +12,10 @@ Quick start
 1. Download the proj, following the link provided by github.
 2. Set up an HBase cluster instance, locally, with the gateway port 2181 (which is the zookeeper clientPort)
 3. Set up `<ant>` and `<java-1.6+>` locally (http://ant.apache.org/manual/index.html)
-4. Run
+4. Simply run `&ant` 
 ```
  cd $project_directory
  ant 
 ```
+The command above will automatically 1) create a base table named `<testtable>` with column family `<cf>` and an index table `<testtable_cf_country>`, 2) set up indexing CoProcessor on the base table, 3) populate the base table with test data entries, which triggers the index updates, and 4) run the test cases in the project. The created tables will be finally disposed when the runtime finishes the execution (so the tables are not there any more). 
 
