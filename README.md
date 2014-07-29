@@ -1,4 +1,4 @@
-hindex: lightweight indexing for log-structured key-value stores
+hindex: an index library for HBase
 ======
 
 Introduction
