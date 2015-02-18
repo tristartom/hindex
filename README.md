@@ -20,7 +20,7 @@ Quick start
 In addition to compiling and building the project, the `ant` command above will automatically 1) create a base table named `testtable` with column family `cf` and an index table `testtable_cf_country` (here `country` is the indexed column), 2) set up indexing CoProcessor on the base table, 3) populate the base table with test data entries, which triggers the index updates, and 4) run the test cases in the project. The created tables will be finally disposed when the runtime finishes the execution (so the tables are not there any more). 
 
 
-References:
+References
 ---
 
 "Lightweight Indexing for Log-Structured Key-Value Stores", Yuzhe Tang, Arun Iyengar, Wei Tan, Liana Fong, Ling Liu, in Proceedings of the 15th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGrid 2015), Shenzhen, Guangdong, China, May 2015, [[pdf](http://tristartom.github.io/docs/ccgrid15.pdf)]
