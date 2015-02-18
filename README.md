@@ -1,4 +1,4 @@
-hindex: an index library for HBase
+HIndex: Secondary Index for HBase and other NoSQL Systems
 ======
 
 Introduction
