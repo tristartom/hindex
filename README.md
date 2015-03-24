@@ -1,6 +1,12 @@
 HIndex: Secondary Index for HBase and other NoSQL Systems
 ======
 
+**Updates**: This project will be merged into https://github.com/tristartom/nosql-indexing . Given ``HIndex`` is renamed to ``DELI``.
+
+Stay tuned!
+
+
+
 Introduction
 ------
 This project is to add a secondary-index layer on top of HBase. In current implementation, we consider mutable data where data updates overwrite previous data versions of the same key. Index is declared at the column level. While it is possible to support various kinds of value-based queries, current implementation handles exact-match and range query (on secondary indexed column).
